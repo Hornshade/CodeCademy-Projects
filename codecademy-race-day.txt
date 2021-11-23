@@ -1,0 +1,20 @@
+let raceNumber = Math.floor(Math.random() * 1000);
+let registerEarly = false;
+let runnerAge = 17;
+if(runnerAge>18 && registerEarly === true)
+{
+  raceNumber+=1000;
+}
+
+if(runnerAge > 18 && registerEarly === true)
+{
+  console.log(`Participant nr ${raceNumber} will race at 9:30 am.`);
+}
+else if (runnerAge > 18 && registerEarly === false)
+{
+  console.log(`Participant nr ${raceNumber} will race at 11:00 am.`);
+}else if (runnerAge < 18) {
+  console.log(`Youth registrants run at 12:30 pm.Your nr is ${raceNumber}.`);
+} else {
+  console.log(`Contestant nr ${raceNumber} , please come to the registration desk.`);
+}

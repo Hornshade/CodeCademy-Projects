@@ -1,0 +1,17 @@
+//variable that is equal to my age
+const myAge=23;
+//variable equal to 2 which will be changed
+let earlyYears=2;
+earlyYears*=10.5;
+//variable equal to my age after the first two years were accounted for
+let laterYears=myAge-2;
+//multiply by 4 to calculate the number of dog years accounted for by later years
+laterYears*=4;
+console.log(earlyYears);
+console.log(laterYears);
+//variable that stores my age in dog years
+let myAgeInDogYears= earlyYears + laterYears ;
+//string method returning all lowercase letters
+const myName='Sabin'.toLowerCase();
+//string interpolation to display the values of my name and age in dog years
+console.log(`My name is ${myName}. I am ${myAge} years old in human years which is ${myAgeInDogYears} years old in dog years.`)
